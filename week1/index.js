@@ -32,6 +32,20 @@ const budgetThisMonth = 3000;
 // 條件二：瑜伽團課只能一次買 3 堂
 // 條件三：一定要花到 2400 以上，並購買 5 堂課程
 
+let AlexBudget = budgetThisMonth;
+let boughtCourseCount = 0;
+// 至少一堂重訓團課
+AlexBudget -= priceWeightTrainingCourse;
+boughtCourseCount++;
+console.log(`Alex 購買 1 堂重訓團課。已購買 ${boughtCourseCount} 堂課，花費 ${budgetThisMonth - AlexBudget} 元`);
+// 至少一堂瑜珈團課，瑜伽團課只能一次買 3 堂
+AlexBudget -= priceYogaCourse*3;
+boughtCourseCount += 3;
+console.log(`Alex 購買 3 堂重訓團課。已購買 ${boughtCourseCount} 堂課，花費 ${budgetThisMonth - AlexBudget} 元`);
+// 一定要花到 2400 以上，並購買 5 堂課程
+AlexBudget -= priceWeightTrainingPersonal;
+boughtCourseCount++;
+console.log(`Alex 購買 1 堂重訓 1 對 1 課程。已購買 ${boughtCourseCount} 堂課，花費 ${budgetThisMonth - AlexBudget} 元`);
 console.log(`Alex 買完課程了，他一共剩下 ${AlexBudget} 元`);
 
 // ### 題目四：線稿圖截圖，看圖宣告變數
