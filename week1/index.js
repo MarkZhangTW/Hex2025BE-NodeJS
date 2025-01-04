@@ -117,16 +117,22 @@ b += 1;    // 將變數 b 設值為 b+1 => 0+1 => 1
 
 // ### 題目九：型別查詢
 // 請不要觀看 console.log，透過註解告知解答每個變數的型別
-let c = 'world';
-let d = 456;
-let e = c + d;
-let f = false;
-let g = d + d;
-let h = f + g;
+let c = 'world'; // 字串型別
+let d = 456;     // 數字型別
+let e = c + d;   // 字串型別。字串加數字自動轉型為字串
+let f = false;   // 布林型別
+let g = d + d;   // 數字型別
+let h = f + g;   // 數字型別。布林加數字自動轉型為數字
 
 // 請從以下新增註解，告知上面每行各別是哪些型別
-// a 是 string
-// b 是 ???
+// a 是 number
+// b 是 number
+// c 是 string
+// d 是 number
+// e 是 string
+// f 是 boolean
+// g 是 number
+// h 是 number
 
 // ### 題目十：傳值與傳參考
 // 情境：請依照程式碼告知答案是多少，並在下方用註解方式寫上這五行程式碼做了什麼事
