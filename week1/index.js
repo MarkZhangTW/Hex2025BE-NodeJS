@@ -143,3 +143,9 @@ let numberArr2 = numberArr1;
 numberArr2.push(20);
 numberArr2 = [25, 30, 35];
 console.log(numberArr1, numberArr2);
+
+// 1. 宣告變數 numberArr1 並指向新陣列 [5, 10, 15]
+// 2. 宣告變數 numberArr2 並指向 numberArr1 指向的陣列
+// 3. 在變數 numberArr2 指向的陣列的結尾新增 20
+// 4. 將變數 numberArr2 指向新陣列 [25, 30, 35]
+// 5. 在 console 顯示 numberArr1,2 的結果 => [5, 10, 15, 20], [25, 30, 35]
