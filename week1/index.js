@@ -8,6 +8,11 @@
 
 // 1.1 範例
 const alexAge = 25;
+const alexMembershipID = "GYM2024-12345";
+const isRunningOnTreadmill = true;
+console.log(`Alex's age: ${alexAge}`);
+console.log(`Alex's membership ID: ${alexMembershipID}`);
+console.log(`Alex is running on treadmill: ${isRunningOnTreadmill}`);
 
 // ### 題目二：變數命名練習
 // - 瑜伽團課 - 300 元
