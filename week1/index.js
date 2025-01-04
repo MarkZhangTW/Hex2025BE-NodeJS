@@ -96,9 +96,13 @@ console.log(`Alex 的水壺還有 ${myWater}cc 的水`);
 
 let totalBill = 0;
 const machineUsePrice = 50;
+const groupClassPrice = 150;
+let machineUsePriceTotal = machineUsePrice * 3; // 使用器械 3 小時
+let groupClassesTotal = groupClassPrice * 2; // 參加 2 堂團體課程
+totalBill += machineUsePriceTotal + groupClassesTotal;
 
 console.log(
-  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${total}元`
+  `Anna 本週器械使用費共 ${machineUsePriceTotal} 元，團體課費用共 ${groupClassesTotal} 元，一共消費金額是 ${totalBill}元`
 );
 
 // ### 題目八：變數重新賦予值
