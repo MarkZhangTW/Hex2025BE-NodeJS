@@ -81,6 +81,9 @@ const sunCount = 1;
 
 let myWater = 2000; // 水壺容量
 myWater -= 500; // 早上喝了 500cc
+myWater -= 800; // 中午喝了 800cc
+myWater += 1000; // 下午健身前裝了 1000cc
+myWater -= 700; // 健身時喝了 700cc
 
 console.log(`Alex 的水壺還有 ${myWater}cc 的水`);
 
