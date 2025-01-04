@@ -60,9 +60,15 @@ console.log(`${discountCoursesNumber} 堂組合包方案: ${priceDiscounted} 元
 
 // ### 題目五：布林值與變數定義，看是否有用對 const, let
 // 情境：Alex 在往健身房的路上，望向城市的風景，請描述她看到的一切，並宣告變數與賦予值
-// 4-1. Alex 在等紅綠燈，他抬頭看一下現在是紅燈，還有 28 秒綠燈（最多 3 個宣告）
-// 4-2. 目前一起等待的機車有 8 台
-// 4.3. Alex 望向天空，看到天上有 5 朵白雲和 1 顆太陽
+// 5-1. Alex 在等紅綠燈，他抬頭看一下現在是紅燈，還有 28 秒綠燈（最多 3 個宣告）
+let isWaitingTrafficLight = true;
+let trafficLightCurrent = 'Red';
+let trafficLightRemainingSeconds = 28;
+// 5-2. 目前一起等待的機車有 8 台
+let waitingVehicleCount = 8;
+// 5-3. Alex 望向天空，看到天上有 5 朵白雲和 1 顆太陽
+let cloudCount = 5;
+const sunCount = 1;
 
 // ### 題目六：情境題：簡單變數計算
 // 情境：Alex 每天都會帶著 2000cc 的水壺
