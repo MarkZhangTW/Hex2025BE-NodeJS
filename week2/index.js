@@ -138,7 +138,43 @@ if (playerA === playerB) {
 - 是否接收新學員：否
 */
 
-const gymCoach = {}; // 練習：使用物件變數定義兩位教練的資訊
+// 練習：使用物件變數定義兩位教練的資訊
+const gymCoach = {
+  coachWang: {
+    specialties: ['Weight Training', 'Weight Loss'],
+    courses: {
+      personal: {
+        price: 2000,
+        length: 60,
+        isAvailable: true
+      },
+      group: {
+        price: 1500,
+        length: 90,
+        isAvailable: false
+      }
+    },
+    background: '王教練擁有 5 年教學經驗，專精於提升學員的肌力與減脂，適合希望快速達成體能目標的學員。',
+    isAcceptNewMembers: true
+  },
+  coachLee: {
+    specialties: ['Yoga', 'Body Sculpting'],
+    courses: {
+      personal: {
+        price: 1800,
+        length: 50,
+        isAvailable: false
+      },
+      group: {
+        price: 1200,
+        length: 75,
+        isAvailable: true
+      }
+    },
+    background: '李教練是一位瑜伽大師，擁有 10 年教學經驗，擅長幫助學員雕塑完美體態，適合希望改善姿態與柔軟度的學員。',
+    isAcceptNewMembers: false
+  }
+};
 
 console.log(gymCoach);
 
