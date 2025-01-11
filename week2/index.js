@@ -240,6 +240,10 @@ const activities = {
 let calorieBurn = 0;
 
 // 練習：計算小明今日消耗的卡路里
+calorieBurn += activities.bicycle.calPerMin * 10;
+calorieBurn += activities.treadmill.calPerMin * 30;
+calorieBurn += activities.yoga.calPerMin * 40;
+calorieBurn += activities.bicycle.calPerMin * 10;
 
 console.log(`小明今日一共消耗約 ${calorieBurn} 卡路里。`);
 
