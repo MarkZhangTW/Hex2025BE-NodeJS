@@ -34,3 +34,14 @@ addPurchaseRecord("Bob", 12);
 addPurchaseRecord("Charlie", 25);
 addPurchaseRecord("Hannah", 50);
 addPurchaseRecord("名稱", "課程數量");
+
+
+// ## 第二階段：計算目前的總營業額
+// 新增函式 calculateTotalPrice，計算目前的總營業額為多少。
+// 印出 console.log 文字為 目前總營業額為 ${totalPrice} 元
+function calculateTotalPrice() {
+  let totalPrice = 0;
+  purchaseRecords.forEach(record => totalPrice += record.total);
+  console.log(`目前總營業額為 ${totalPrice} 元`);
+}
+calculateTotalPrice();
